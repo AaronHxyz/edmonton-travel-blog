@@ -96,7 +96,7 @@ body {
     display: inline-block;
     margin: 0 6px;
 }
-/* TODO (CSS #1): Nav links as buttons
+/* TODO (CSS #1): Nav links as buttons - done
     Target: .site-nav a (the clickable element)
     Typical values:
     - display: inline-block so padding/background behave like a “button”.
@@ -114,8 +114,13 @@ body {
 .site-nav a {
     display: inline-block;
     /* add more properties here */
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--primary);
 }
-/* TODO (CSS #2): Hover effect
+/* TODO (CSS #2): Hover effect - done
     Target: .site-nav a:hover
     You should define what changes when the mouse hovers:
     - background color: commonly var(--accent)
@@ -124,8 +129,9 @@ body {
 */
 .site-nav a:hover {
     /* add properties here */
+    background: var(--accent);
 }
-/* TODO (CSS #3): Active link highlight
+/* TODO (CSS #3): Active link highlight -done
     Target: .site-nav a.active
     This should make the current page link look “selected.”
     Common approaches (choose one):
@@ -137,6 +143,8 @@ body {
 */
 .site-nav a.active {
     /* add properties here */
+    background: var(--accent);
+    font-weight: bold;
 }
 /* Two-column layout (Flexbox)
     You may keep this as-is. CSS Layouts will be taught be in a future lecture
